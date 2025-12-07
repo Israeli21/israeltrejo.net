@@ -1,0 +1,106 @@
+import { useEffect, useState } from "react";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
+
+export function Hero() {
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimationComplete(true);
+    }, 500);
+  }, []);
+
+  return (
+    <section className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden">
+      {/* Space Background with Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a0a1a] to-[#1a0033]">
+        {/* Animated Stars */}
+        <div className="absolute inset-0 opacity-70">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
+        
+        {/* Galaxy/Nebula Effect - Right Side */}
+        <div className="absolute right-[-20%] top-1/2 transform -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-blue-400/30 via-purple-400/20 to-pink-400/15 rounded-full blur-[80px] animate-pulse-slow"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-2xl">
+        <p
+          className={`text-lg md:text-xl text-gray-300 mb-2 font-light transition-all duration-700 ${
+            animationComplete
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+          }`}
+        >
+          Hi! The name's
+        </p>
+        
+        <h1
+          className={`text-6xl md:text-7xl lg:text-8xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent leading-tight transition-all duration-700 delay-100 ${
+            animationComplete
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+          }`}
+        >
+          Israel Trejo
+        </h1>
+        
+        <p
+          className={`text-2xl md:text-3xl text-gray-300 mb-10 font-normal transition-all duration-700 delay-200 ${
+            animationComplete
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+          }`}
+        >
+          Exploring the universe of tech
+        </p>
+
+        {/* Buttons */}
+        <div
+          className={`flex flex-col sm:flex-row gap-4 mb-8 transition-all duration-700 delay-300 ${
+            animationComplete
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+          }`}
+        >
+          <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]">
+            Download CV
+          </button>
+          <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]">
+            Contact Info
+          </button>
+        </div>
+
+        {/* Social Links */}
+        <div
+          className={`flex gap-6 transition-all duration-700 delay-400 ${
+            animationComplete
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+          }`}
+        >
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
+            aria-label="LinkedIn"
+          >
+            <LinkedinIcon size={32} />
+          </a>
+          <a
+            href="https://github.com/Israeli21"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
+            aria-label="GitHub"
+          >
+            <GithubIcon size={32} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
