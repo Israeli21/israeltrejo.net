@@ -20,6 +20,14 @@ export function Hero() {
           <div className="stars2"></div>
           <div className="stars3"></div>
         </div>
+
+        {/* Galaxy Image */}
+        <img 
+          src="/client/images/galaxy.png" 
+          alt="Galaxy"
+          // className="absolute right-[-10%] top-1/2 transform -translate-y-1/2 w-[800px] h-[800px] object-cover opacity-70 mix-blend-screen"
+          className = "float-right pt-40 opacity-h 50"
+        />
       </div>
 
       {/* Content */}
