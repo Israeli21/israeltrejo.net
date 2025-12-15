@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden">
       {/* Space Background with Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a0a1a] to-[#1a0033]">
+      <div className="absolute inset-0 bg-black">
         {/* Animated Stars */}
         <div className="absolute inset-0 opacity-70">
           <div className="stars"></div>
@@ -26,14 +26,14 @@ export function Hero() {
           src="/client/images/galaxy.png" 
           alt="Galaxy"
           // className="absolute right-[-10%] top-1/2 transform -translate-y-1/2 w-[800px] h-[800px] object-cover opacity-70 mix-blend-screen"
-          className = "float-right pt-40 opacity-h 50"
+          className = "float-right pt-40 w-[780px] pr-4"
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-2xl">
+      <div className="relative z-10 max-w-2xl pl-8">
         <p
-          className={`text-lg md:text-xl text-gray-300 mb-2 font-light transition-all duration-700 ${
+          className={`text-xl md:text-2xl text-gray-300 mb-2 font-light transition-all duration-700 ${
             animationComplete
               ? "translate-y-0 opacity-100"
               : "translate-y-8 opacity-0"
@@ -43,7 +43,7 @@ export function Hero() {
         </p>
         
         <h1
-          className={`text-6xl md:text-7xl lg:text-8xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent leading-tight transition-all duration-700 delay-100 ${
+          className={`text-6xl md:text-7xl lg:text-8xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent leading-tight transition-all duration-700 delay-100 pb-4 ${
             animationComplete
               ? "translate-y-0 opacity-100"
               : "translate-y-8 opacity-0"
@@ -87,7 +87,7 @@ export function Hero() {
           }`}
         >
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/israel-trejo-2863a8226/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
