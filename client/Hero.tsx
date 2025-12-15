@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 
+import { TopBar } from "./components/TopBar";
+
 export function Hero() {
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -11,7 +13,8 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden">
+    <><TopBar />
+      <section className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden">
       {/* Space Background with Gradient */}
       <div className="absolute inset-0 bg-black">
         {/* Animated Stars */}
@@ -75,5 +78,6 @@ export function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
