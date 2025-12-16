@@ -4,7 +4,10 @@ export function TopBar() {
       <div className="flex justify-between items-center">
         {/* Logo/Name on the left */}
         <div className="text-2xl font-bold text-white">
-          Trejo
+          <a href="#home"
+            className="text-white hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)] duration-300">
+            Trejo
+          </a>
         </div>
         
         {/* Navigation links on the right */}
@@ -15,6 +18,14 @@ export function TopBar() {
               className="text-white hover:text-gray-300 transition-colors duration-300"
             >
               About
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              className="text-white hover:text-gray-300 transition-colors duration-300"
+            >
+              Skills
             </a>
           </li>
           <li>

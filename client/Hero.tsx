@@ -3,6 +3,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 import { TopBar } from "./components/TopBar";
 import { About } from "./pages/About";
+import { Skills } from "./pages/Skills";
 
 export function Hero() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -15,8 +16,10 @@ export function Hero() {
 
   return (
     <><TopBar />
-      <section className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden">
-      {/* Space Background with Gradient */}
+      <section 
+        id="home"
+        className="relative min-h-screen w-full flex items-center px-6 md:px-12 lg:px-20 overflow-hidden"
+      >
       <div className="absolute inset-0 bg-black">
         {/* Animated Stars */}
         <div className="absolute inset-0 opacity-70">
@@ -80,6 +83,7 @@ export function Hero() {
       </div>
     </section>
     <About />
+    <Skills />
     </>
   );
 }
