@@ -60,7 +60,7 @@ export function Hero() {
         </div>
 
         {/* Social Links */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 pl-2">
           <a
             href="https://www.linkedin.com/in/israel-trejo-2863a8226/"
             target="_blank"
