@@ -1,0 +1,47 @@
+import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
+
+export function Contact() {
+  return (
+    <section id="contact" className="py-20 px-6 md:px-12 lg:px-20 bg-black">
+    <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white text-center">Contact Me</h2>
+    <div className="flex justify-center gap-8 p-8 border border-gray-700 rounded-lg max-w-md mx-auto">
+      <div className="flex items-center gap-4">
+        <a
+          href="https://www.linkedin.com/in/israel-trejo-2863a8226/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
+          aria-label="LinkedIn"
+        >
+          <LinkedinIcon size={32} />
+        </a>
+        <p className="text-white text-xl">LinkedIn</p>
+      </div>
+      <div className="flex items-center gap-4">
+        <a
+          href="https://github.com/Israeli21"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
+          aria-label="GitHub"
+        >
+          <GithubIcon size={32} />
+        </a>
+        <a className="text-white text-xl">GitHub</a>
+      </div>
+      <div className="flex items-center gap-4">
+        <a
+          href="mailto:isrtrejo07@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:-translate-y-1 transition-all duration-300 hover:drop-shadow-[0_5px_15px_rgba(255,255,255,0.4)]"
+          aria-label="Email"
+        >
+          <Mail size={32} />
+        </a>
+        <p className="text-white text-xl">Email</p>
+      </div>
+    </div>
+    </section>
+  );
+}

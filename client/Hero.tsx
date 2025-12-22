@@ -6,6 +6,7 @@ import { About } from "./pages/About";
 import { Skills } from "./pages/Skills";
 import { Experience } from "./pages/Experience";
 import { Projects } from "./pages/Projects";
+import { Contact } from "./pages/Contact";
 
 export function Hero() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -90,6 +91,7 @@ export function Hero() {
     <Skills />
     <Experience />
     <Projects />
+    <Contact />
     </>
   );
 }
