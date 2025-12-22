@@ -19,7 +19,7 @@ body {
     940px 1750px #FFF, 1750px 430px #FFF, 1080px 1940px #FFF, 420px 1680px #FFF,
     1860px 1070px #FFF, 1020px 420px #FFF, 970px 1620px #FFF, 520px 1750px #FFF,
     80px 150px #FFF, 1850px 200px #FFF, 120px 1850px #FFF;
-  animation: animStar 50s linear infinite;
+  animation: animStar 50s linear infinite, twinkle 3s ease-in-out infinite;
 }
 
 .stars::after {
@@ -48,7 +48,7 @@ body {
     1084px 232px #FFF, 347px 1776px #FFF, 1722px 243px #FFF, 1629px 835px #FFF,
     1184px 1717px #FFF, 1363px 1954px #FFF, 1641px 1140px #FFF, 1189px 1498px #FFF,
     60px 320px #FFF, 1920px 450px #FFF, 95px 1650px #FFF;
-  animation: animStar 100s linear infinite;
+  animation: animStar 100s linear infinite, twinkle 4s ease-in-out infinite;
 }
 
 .stars2::after {
@@ -74,8 +74,9 @@ body {
   box-shadow: 1446px 902px #FFF, 1244px 776px #FFF, 1119px 1310px #FFF, 1745px 450px #FFF,
     1735px 1684px #FFF, 1669px 1316px #FFF, 1036px 1542px #FFF, 1686px 1684px #FFF,
     1185px 312px #FFF, 1734px 1540px #FFF,
-    50px 80px #FFF, 1880px 120px #FFF, 75px 1800px #FFF;
-  animation: animStar 150s linear infinite;
+    50px 80px #FFF, 1880px 120px #FFF, 75px 1800px #FFF, 60px 600px #FFF, 200px 700px #FFF,
+    1200px 700px #FFF, 1400px 650px #FFF;
+  animation: animStar 150s linear infinite, twinkle 5s ease-in-out infinite;
 }
 
 .stars3::after {
@@ -88,32 +89,15 @@ body {
   box-shadow: 1446px 902px #FFF, 1244px 776px #FFF, 1119px 1310px #FFF, 1745px 450px #FFF,
     1735px 1684px #FFF, 1669px 1316px #FFF, 1036px 1542px #FFF, 1686px 1684px #FFF,
     1185px 312px #FFF, 1734px 1540px #FFF,
-    50px 80px #FFF, 1880px 120px #FFF, 75px 1800px #FFF;
+    50px 80px #FFF, 1880px 120px #FFF, 75px 1800px #FFF, 60px 600px #FFF, 200px 700px #FFF,
+    1200px 700px #FFF, 1400px 650px #FFF;
 }
 
-@keyframes animStar .stars1 {
-  from {
-    transform: expand(0);
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
   }
-  to {
-    transform: expand(1);
-  }
-}
-
-@keyframes animStar .stars2 {
-  from {
-    transform: expand(0);
-  }
-  to {
-    transform: expand(1);
-  }
-}
-
-@keyframes animStar .stars3 {
-  from {
-    transform: expand(0);
-  }
-  to {
-    transform: expand(1);
+  50% {
+    opacity: 0.3;
   }
 }
