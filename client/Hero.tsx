@@ -54,12 +54,15 @@ export function Hero() {
             Exploring the universe of tech</p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]">
+            <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]"
+                    >
               Download CV
             </button>
-            <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]">
-              Contact Info
-            </button>
+            <a href="#contact">
+              <button className="px-8 py-4 text-base font-medium rounded-full border-2 border-white bg-white text-black hover:bg-transparent hover:text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(255,255,255,0.2)]">
+                Contact Info
+              </button>
+            </a>
           </div>
 
           {/* Social Links */}
