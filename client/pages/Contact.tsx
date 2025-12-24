@@ -49,8 +49,10 @@ export function Contact() {
           <p className="text-white text-xl">Email</p>
         </div>
       </div>
+      <div className="absolute w-full bottom-0">
+        <BottomBar />
+      </div>
     </section>
-    <BottomBar />
     </>
   );
 }
