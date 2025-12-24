@@ -1,9 +1,9 @@
-export type skill = {
+export type Picture = {
     name: string;
     picture: string;
 };
 
-export const pictures: skill[] = [
+export const pictures: Picture[] = [
     {
         name: "Israel Trejo",
         picture: "/client/images/Israel_Trejo.jpg",
