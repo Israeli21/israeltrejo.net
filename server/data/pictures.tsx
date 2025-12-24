@@ -10,14 +10,14 @@ export const pictures: Picture[] = [
     },
     {
         name: "Comic Drawings",
-        picture: "/client/images/comic_characters_design.jpg",
+        picture: "/client/images/comic_characters_designs.jpg",
     },
     {
-        name: "live_drawing",
+        name: "Live Drawing",
         picture: "/client/images/live_drawing.jpg",
     },
     {
-        name: "live_drawing_2",
+        name: "Live Drawing 2",
         picture: "/client/images/live_drawing2.jpg",
     }
 ];

@@ -16,7 +16,7 @@ export function About() {
         <div className="grid col-span-1 flex items-center justify-center">
           <PicturePile pictures={pictures} />
         </div>
-        <div className="grid col-span-2 max-w-3xl text-lg md:text-xl leading-relaxed">
+        <div className="grid col-span-2 pl-12 max-w-3xl text-lg md:text-xl leading-relaxed">
           <div className="flex flex-col justify-center h-full">
             <p className="mb-4">
               I’m Israel Trejo, currently a Senior Computer Science student at the University of Houston with a passion 
