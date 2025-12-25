@@ -47,5 +47,13 @@ export const projects: Project[] = [
         endDate: "Dec 2025",
         link: "https://example.com",
         skills: ["TypeScript", "Python", "React", "Tailwind"],
+    },
+    {
+        title: "360 Image Viewer",
+        description: "Created an interactive 360-degree image viewer, allowing users to upload and explore panoramic images within a web application. Implementation of a point cloud effect to enhance user immersion and engagement.",
+        startDate: "Oct 2025",
+        endDate: "Present",
+        link: "https://example.com",
+        skills: ["TypeScript", "React", "Three.js", "Python"],
     }
 ];

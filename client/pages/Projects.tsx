@@ -16,8 +16,8 @@ import ProjectFolder from "../components/ProjectFolder";
 
 export function Projects() {
   return (
-    <section id="projects" className="min-h-screen bg-black w-full flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 text-white">
-      <h2 className="text-4xl md:text-5xl font-bold mb-8">
+    <section id="projects" className="min-h-screen bg-black w-full pt-12 flex flex-col items-center justify-start px-6 md:px-12 lg:px-20 text-white">
+      <h2 className="text-4xl md:text-5xl font-bold mb-8 mt-20">
         My Projects
       </h2>
       <div className="container mx-auto px-6 relative z-10">
